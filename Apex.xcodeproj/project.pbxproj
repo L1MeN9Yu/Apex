@@ -8,12 +8,87 @@
 
 /* Begin PBXBuildFile section */
 		426DF4ED23D593FC00F19F00 /* Apex.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF4EB23D593FC00F19F00 /* Apex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		426DF50323D5972100F19F00 /* Apex.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF4EB23D593FC00F19F00 /* Apex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		426DF50923D5982300F19F00 /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF50723D5982300F19F00 /* export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		426DF50A23D5982300F19F00 /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF50723D5982300F19F00 /* export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		426DF50B23D5982300F19F00 /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF50823D5982300F19F00 /* c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		426DF50C23D5982300F19F00 /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF50823D5982300F19F00 /* c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		426DF51423D59BF000F19F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DF51323D59BF000F19F00 /* AppDelegate.swift */; };
+		426DF51623D59BF000F19F00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DF51523D59BF000F19F00 /* SceneDelegate.swift */; };
+		426DF51823D59BF000F19F00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DF51723D59BF000F19F00 /* ContentView.swift */; };
+		426DF51A23D59BF100F19F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426DF51923D59BF100F19F00 /* Assets.xcassets */; };
+		426DF51D23D59BF100F19F00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426DF51C23D59BF100F19F00 /* Preview Assets.xcassets */; };
+		426DF52023D59BF100F19F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426DF51E23D59BF100F19F00 /* LaunchScreen.storyboard */; };
+		426DF52623D59C0A00F19F00 /* Apex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426DF4E823D593FC00F19F00 /* Apex.framework */; };
+		426DF52723D59C0A00F19F00 /* Apex.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 426DF4E823D593FC00F19F00 /* Apex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		426DF52D23D59DC500F19F00 /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 426DF52B23D59D8200F19F00 /* libleveldb.a */; };
+		426DF52E23D59DD000F19F00 /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 426DF52C23D59DA300F19F00 /* libleveldb.a */; };
+		426DF53023D59DF400F19F00 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 426DF52F23D59DEC00F19F00 /* libc++.tbd */; };
+		426DF53123D59DFB00F19F00 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 426DF52F23D59DEC00F19F00 /* libc++.tbd */; };
+		4530401AA73B742258BE0748 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453049EACB268B2A55256440 /* Database.swift */; };
+		453040E1A1FA47D95B272894 /* Apex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530469F114908A8DDA339C6 /* Apex.swift */; };
+		45304263836495CAFFAAD4C1 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453045B39C64A68830DA8E9D /* Environment.swift */; };
+		453042A6B0AF6377A28DFC6A /* LogFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530453D9498E4EF54ED1F66 /* LogFlag.swift */; };
+		4530437D4D780702CB989085 /* LogFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530453D9498E4EF54ED1F66 /* LogFlag.swift */; };
+		453044CD27F97DFE2D5C3EE7 /* ApexEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530450EF3D7531ACE675A8E /* ApexEnvironment.swift */; };
+		4530453C9FE9B1E44CCC4DA6 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453048ADC7962381057CC1FE /* Error.swift */; };
+		453045857208FE82BE7B4067 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453045B39C64A68830DA8E9D /* Environment.swift */; };
+		453048240FFC6C8A70DF3089 /* Apex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530469F114908A8DDA339C6 /* Apex.swift */; };
+		4530498DC2C60CF29F905540 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453049EACB268B2A55256440 /* Database.swift */; };
+		45304BAFDFFFBBC1CF4BC760 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453045EDA8E9C74823A61458 /* Logger.swift */; };
+		45304F65CFA2D7D7F3A70013 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453045EDA8E9C74823A61458 /* Logger.swift */; };
+		45304FDAC7E650229DBE0DC3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453048ADC7962381057CC1FE /* Error.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		426DF52823D59C0A00F19F00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 426DF4DF23D593FC00F19F00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 426DF4E723D593FC00F19F00;
+			remoteInfo = Apex.iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		426DF52A23D59C0A00F19F00 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				426DF52723D59C0A00F19F00 /* Apex.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		426DF4E823D593FC00F19F00 /* Apex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Apex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426DF4EB23D593FC00F19F00 /* Apex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apex.h; sourceTree = "<group>"; };
 		426DF4EC23D593FC00F19F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		426DF4F823D5942300F19F00 /* Apex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Apex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426DF50723D5982300F19F00 /* export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = export.h; sourceTree = "<group>"; };
+		426DF50823D5982300F19F00 /* c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
+		426DF51123D59BF000F19F00 /* Apex.iOS.Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apex.iOS.Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		426DF51323D59BF000F19F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		426DF51523D59BF000F19F00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		426DF51723D59BF000F19F00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		426DF51923D59BF100F19F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		426DF51C23D59BF100F19F00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		426DF51F23D59BF100F19F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		426DF52123D59BF100F19F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		426DF52B23D59D8200F19F00 /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libleveldb.a; path = ExternalLibrary/iOS/lib/libleveldb.a; sourceTree = "<group>"; };
+		426DF52C23D59DA300F19F00 /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libleveldb.a; path = ExternalLibrary/macOS/lib/libleveldb.a; sourceTree = "<group>"; };
+		426DF52F23D59DEC00F19F00 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		4530450EF3D7531ACE675A8E /* ApexEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApexEnvironment.swift; sourceTree = "<group>"; };
+		4530453D9498E4EF54ED1F66 /* LogFlag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFlag.swift; sourceTree = "<group>"; };
+		453045B39C64A68830DA8E9D /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		453045EDA8E9C74823A61458 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		4530469F114908A8DDA339C6 /* Apex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apex.swift; sourceTree = "<group>"; };
+		453048ADC7962381057CC1FE /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		453049EACB268B2A55256440 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +96,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426DF53023D59DF400F19F00 /* libc++.tbd in Frameworks */,
+				426DF52D23D59DC500F19F00 /* libleveldb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426DF4F523D5942300F19F00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426DF53123D59DFB00F19F00 /* libc++.tbd in Frameworks */,
+				426DF52E23D59DD000F19F00 /* libleveldb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426DF50E23D59BF000F19F00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426DF52623D59C0A00F19F00 /* Apex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,8 +124,12 @@
 		426DF4DE23D593FC00F19F00 = {
 			isa = PBXGroup;
 			children = (
+				426DF50623D5981400F19F00 /* C */,
+				426DF50023D5957200F19F00 /* Source */,
 				426DF4EA23D593FC00F19F00 /* Apex */,
+				426DF51223D59BF000F19F00 /* Apex.iOS.Demo */,
 				426DF4E923D593FC00F19F00 /* Products */,
+				426DF52523D59C0A00F19F00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				426DF4E823D593FC00F19F00 /* Apex.framework */,
+				426DF4F823D5942300F19F00 /* Apex.framework */,
+				426DF51123D59BF000F19F00 /* Apex.iOS.Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +152,101 @@
 			path = Apex;
 			sourceTree = "<group>";
 		};
+		426DF50023D5957200F19F00 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4530469F114908A8DDA339C6 /* Apex.swift */,
+				453043AD4479F85B0C11BC93 /* Database */,
+				4530430599C4188E5F686621 /* Environment */,
+				453041852B00F606384418A4 /* Logger */,
+				45304FA977D7FA60FE7AE63B /* Error */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		426DF50623D5981400F19F00 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				426DF50823D5982300F19F00 /* c.h */,
+				426DF50723D5982300F19F00 /* export.h */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		426DF51223D59BF000F19F00 /* Apex.iOS.Demo */ = {
+			isa = PBXGroup;
+			children = (
+				453044DFD014E6839E910DD0 /* Apex */,
+				426DF51323D59BF000F19F00 /* AppDelegate.swift */,
+				426DF51523D59BF000F19F00 /* SceneDelegate.swift */,
+				426DF51723D59BF000F19F00 /* ContentView.swift */,
+				426DF51923D59BF100F19F00 /* Assets.xcassets */,
+				426DF51E23D59BF100F19F00 /* LaunchScreen.storyboard */,
+				426DF52123D59BF100F19F00 /* Info.plist */,
+				426DF51B23D59BF100F19F00 /* Preview Content */,
+			);
+			path = Apex.iOS.Demo;
+			sourceTree = "<group>";
+		};
+		426DF51B23D59BF100F19F00 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				426DF51C23D59BF100F19F00 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		426DF52523D59C0A00F19F00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				426DF52F23D59DEC00F19F00 /* libc++.tbd */,
+				426DF52C23D59DA300F19F00 /* libleveldb.a */,
+				426DF52B23D59D8200F19F00 /* libleveldb.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		453041852B00F606384418A4 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				453045EDA8E9C74823A61458 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		4530430599C4188E5F686621 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				4530453D9498E4EF54ED1F66 /* LogFlag.swift */,
+				453045B39C64A68830DA8E9D /* Environment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		453043AD4479F85B0C11BC93 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				453049EACB268B2A55256440 /* Database.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		453044DFD014E6839E910DD0 /* Apex */ = {
+			isa = PBXGroup;
+			children = (
+				4530450EF3D7531ACE675A8E /* ApexEnvironment.swift */,
+			);
+			path = Apex;
+			sourceTree = "<group>";
+		};
+		45304FA977D7FA60FE7AE63B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				453048ADC7962381057CC1FE /* Error.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -59,16 +254,28 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426DF50B23D5982300F19F00 /* c.h in Headers */,
+				426DF50923D5982300F19F00 /* export.h in Headers */,
 				426DF4ED23D593FC00F19F00 /* Apex.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426DF4F323D5942300F19F00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426DF50C23D5982300F19F00 /* c.h in Headers */,
+				426DF50A23D5982300F19F00 /* export.h in Headers */,
+				426DF50323D5972100F19F00 /* Apex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		426DF4E723D593FC00F19F00 /* Apex */ = {
+		426DF4E723D593FC00F19F00 /* Apex.iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 426DF4F023D593FC00F19F00 /* Build configuration list for PBXNativeTarget "Apex" */;
+			buildConfigurationList = 426DF4F023D593FC00F19F00 /* Build configuration list for PBXNativeTarget "Apex.iOS" */;
 			buildPhases = (
 				426DF4E323D593FC00F19F00 /* Headers */,
 				426DF4E423D593FC00F19F00 /* Sources */,
@@ -79,10 +286,47 @@
 			);
 			dependencies = (
 			);
-			name = Apex;
+			name = Apex.iOS;
 			productName = Apex;
 			productReference = 426DF4E823D593FC00F19F00 /* Apex.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		426DF4F723D5942300F19F00 /* Apex.macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 426DF4FD23D5942300F19F00 /* Build configuration list for PBXNativeTarget "Apex.macOS" */;
+			buildPhases = (
+				426DF4F323D5942300F19F00 /* Headers */,
+				426DF4F423D5942300F19F00 /* Sources */,
+				426DF4F523D5942300F19F00 /* Frameworks */,
+				426DF4F623D5942300F19F00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Apex.macOS;
+			productName = Apex.macOS;
+			productReference = 426DF4F823D5942300F19F00 /* Apex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		426DF51023D59BF000F19F00 /* Apex.iOS.Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 426DF52423D59BF100F19F00 /* Build configuration list for PBXNativeTarget "Apex.iOS.Demo" */;
+			buildPhases = (
+				426DF50D23D59BF000F19F00 /* Sources */,
+				426DF50E23D59BF000F19F00 /* Frameworks */,
+				426DF50F23D59BF000F19F00 /* Resources */,
+				426DF52A23D59C0A00F19F00 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				426DF52923D59C0A00F19F00 /* PBXTargetDependency */,
+			);
+			name = Apex.iOS.Demo;
+			productName = Apex.iOS.Demo;
+			productReference = 426DF51123D59BF000F19F00 /* Apex.iOS.Demo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,10 +334,17 @@
 		426DF4DF23D593FC00F19F00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Mengyu Li";
 				TargetAttributes = {
 					426DF4E723D593FC00F19F00 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					426DF4F723D5942300F19F00 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					426DF51023D59BF000F19F00 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -111,7 +362,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				426DF4E723D593FC00F19F00 /* Apex */,
+				426DF4E723D593FC00F19F00 /* Apex.iOS */,
+				426DF4F723D5942300F19F00 /* Apex.macOS */,
+				426DF51023D59BF000F19F00 /* Apex.iOS.Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +377,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		426DF4F623D5942300F19F00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426DF50F23D59BF000F19F00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426DF52023D59BF100F19F00 /* LaunchScreen.storyboard in Resources */,
+				426DF51D23D59BF100F19F00 /* Preview Assets.xcassets in Resources */,
+				426DF51A23D59BF100F19F00 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -131,10 +401,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453048240FFC6C8A70DF3089 /* Apex.swift in Sources */,
+				4530401AA73B742258BE0748 /* Database.swift in Sources */,
+				453042A6B0AF6377A28DFC6A /* LogFlag.swift in Sources */,
+				453045857208FE82BE7B4067 /* Environment.swift in Sources */,
+				45304BAFDFFFBBC1CF4BC760 /* Logger.swift in Sources */,
+				4530453C9FE9B1E44CCC4DA6 /* Error.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426DF4F423D5942300F19F00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453040E1A1FA47D95B272894 /* Apex.swift in Sources */,
+				4530498DC2C60CF29F905540 /* Database.swift in Sources */,
+				4530437D4D780702CB989085 /* LogFlag.swift in Sources */,
+				45304263836495CAFFAAD4C1 /* Environment.swift in Sources */,
+				45304F65CFA2D7D7F3A70013 /* Logger.swift in Sources */,
+				45304FDAC7E650229DBE0DC3 /* Error.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426DF50D23D59BF000F19F00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426DF51423D59BF000F19F00 /* AppDelegate.swift in Sources */,
+				426DF51623D59BF000F19F00 /* SceneDelegate.swift in Sources */,
+				426DF51823D59BF000F19F00 /* ContentView.swift in Sources */,
+				453044CD27F97DFE2D5C3EE7 /* ApexEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		426DF52923D59C0A00F19F00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 426DF4E723D593FC00F19F00 /* Apex.iOS */;
+			targetProxy = 426DF52823D59C0A00F19F00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		426DF51E23D59BF100F19F00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426DF51F23D59BF100F19F00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		426DF4EE23D593FC00F19F00 /* Debug */ = {
@@ -260,21 +579,25 @@
 		426DF4F123D593FC00F19F00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HMEN575QY4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ExternalLibrary/iOS/include";
 				INFOPLIST_FILE = Apex/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ExternalLibrary/iOS/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = top.limengyu.Apex;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Apex;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -284,22 +607,128 @@
 		426DF4F223D593FC00F19F00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HMEN575QY4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ExternalLibrary/iOS/include";
 				INFOPLIST_FILE = Apex/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ExternalLibrary/iOS/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = top.limengyu.Apex;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Apex;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		426DF4FE23D5942300F19F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HMEN575QY4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ExternalLibrary/macOS/include";
+				INFOPLIST_FILE = "$(SRCROOT)/Apex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ExternalLibrary/macOS/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = top.limengyu.Apex;
+				PRODUCT_NAME = Apex;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		426DF4FF23D5942300F19F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HMEN575QY4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ExternalLibrary/macOS/include";
+				INFOPLIST_FILE = "$(SRCROOT)/Apex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ExternalLibrary/macOS/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = top.limengyu.Apex;
+				PRODUCT_NAME = Apex;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		426DF52223D59BF100F19F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Apex.iOS.Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = HMEN575QY4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Apex.iOS.Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "top.limengyu.Apex-iOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		426DF52323D59BF100F19F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Apex.iOS.Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = HMEN575QY4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Apex.iOS.Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "top.limengyu.Apex-iOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,11 +746,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		426DF4F023D593FC00F19F00 /* Build configuration list for PBXNativeTarget "Apex" */ = {
+		426DF4F023D593FC00F19F00 /* Build configuration list for PBXNativeTarget "Apex.iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				426DF4F123D593FC00F19F00 /* Debug */,
 				426DF4F223D593FC00F19F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		426DF4FD23D5942300F19F00 /* Build configuration list for PBXNativeTarget "Apex.macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426DF4FE23D5942300F19F00 /* Debug */,
+				426DF4FF23D5942300F19F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		426DF52423D59BF100F19F00 /* Build configuration list for PBXNativeTarget "Apex.iOS.Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426DF52223D59BF100F19F00 /* Debug */,
+				426DF52323D59BF100F19F00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

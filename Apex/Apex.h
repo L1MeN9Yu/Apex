@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char ApexVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Apex/PublicHeader.h>
 
-
+#import <Apex/export.h>
+#import <Apex/c.h>
