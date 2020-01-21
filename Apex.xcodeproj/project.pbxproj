@@ -25,23 +25,25 @@
 		426DF52E23D59DD000F19F00 /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 426DF52C23D59DA300F19F00 /* libleveldb.a */; };
 		426DF53023D59DF400F19F00 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 426DF52F23D59DEC00F19F00 /* libc++.tbd */; };
 		426DF53123D59DFB00F19F00 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 426DF52F23D59DEC00F19F00 /* libc++.tbd */; };
+		45304002977A9E0B7100D651 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45304EBE0508567C494EF6AF /* Property.swift */; };
 		4530401AA73B742258BE0748 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453049EACB268B2A55256440 /* Database.swift */; };
 		453040E1A1FA47D95B272894 /* Apex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530469F114908A8DDA339C6 /* Apex.swift */; };
 		4530419FE1EBA38CC036FD36 /* Bool.Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530478C5174698367941AB2 /* Bool.Int.swift */; };
 		45304263836495CAFFAAD4C1 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453045B39C64A68830DA8E9D /* Environment.swift */; };
 		453042A6B0AF6377A28DFC6A /* LogFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530453D9498E4EF54ED1F66 /* LogFlag.swift */; };
 		453042C7B02DA7A567532CF9 /* Repairer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453049D4CC582E0C8B0F9037 /* Repairer.swift */; };
-		4530435C9F4044BF3D03E208 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453043FEAC3E8268E025FE75 /* Option.swift */; };
 		453043712F4F8385D6438C75 /* Bool.Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530478C5174698367941AB2 /* Bool.Int.swift */; };
 		4530437D4D780702CB989085 /* LogFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530453D9498E4EF54ED1F66 /* LogFlag.swift */; };
 		453044CD27F97DFE2D5C3EE7 /* ApexEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530450EF3D7531ACE675A8E /* ApexEnvironment.swift */; };
 		4530453C9FE9B1E44CCC4DA6 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453048ADC7962381057CC1FE /* Error.swift */; };
 		453045857208FE82BE7B4067 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453045B39C64A68830DA8E9D /* Environment.swift */; };
+		453046C8BC7FB2C3F9D9BAE1 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45304558EBA083D5B78A7ACC /* Option.swift */; };
 		453048240FFC6C8A70DF3089 /* Apex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530469F114908A8DDA339C6 /* Apex.swift */; };
 		453048EDC508D67F25D02ECB /* Repairer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453049D4CC582E0C8B0F9037 /* Repairer.swift */; };
+		4530493DB1EC49DFFF21E951 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45304558EBA083D5B78A7ACC /* Option.swift */; };
 		4530498DC2C60CF29F905540 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453049EACB268B2A55256440 /* Database.swift */; };
+		453049FC79DC32E00FEC36C1 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45304EBE0508567C494EF6AF /* Property.swift */; };
 		45304BAFDFFFBBC1CF4BC760 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453045EDA8E9C74823A61458 /* Logger.swift */; };
-		45304F47A681D46A20AC6250 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453043FEAC3E8268E025FE75 /* Option.swift */; };
 		45304F65CFA2D7D7F3A70013 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453045EDA8E9C74823A61458 /* Logger.swift */; };
 		45304FDAC7E650229DBE0DC3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453048ADC7962381057CC1FE /* Error.swift */; };
 /* End PBXBuildFile section */
@@ -91,9 +93,9 @@
 		426DF52B23D59D8200F19F00 /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libleveldb.a; path = ExternalLibrary/iOS/lib/libleveldb.a; sourceTree = "<group>"; };
 		426DF52C23D59DA300F19F00 /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libleveldb.a; path = ExternalLibrary/macOS/lib/libleveldb.a; sourceTree = "<group>"; };
 		426DF52F23D59DEC00F19F00 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
-		453043FEAC3E8268E025FE75 /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		4530450EF3D7531ACE675A8E /* ApexEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApexEnvironment.swift; sourceTree = "<group>"; };
 		4530453D9498E4EF54ED1F66 /* LogFlag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFlag.swift; sourceTree = "<group>"; };
+		45304558EBA083D5B78A7ACC /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		453045B39C64A68830DA8E9D /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		453045EDA8E9C74823A61458 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		4530469F114908A8DDA339C6 /* Apex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apex.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		453048ADC7962381057CC1FE /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		453049D4CC582E0C8B0F9037 /* Repairer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repairer.swift; sourceTree = "<group>"; };
 		453049EACB268B2A55256440 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		45304EBE0508567C494EF6AF /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,12 +175,13 @@
 			children = (
 				4530469F114908A8DDA339C6 /* Apex.swift */,
 				453043AD4479F85B0C11BC93 /* Database */,
+				45304D89C49962061BB9719A /* Option */,
+				453040DF3904C08B1F182A64 /* Repairer */,
+				45304FA977D7FA60FE7AE63B /* Error */,
 				4530430599C4188E5F686621 /* Environment */,
 				453041852B00F606384418A4 /* Logger */,
-				45304FA977D7FA60FE7AE63B /* Error */,
-				453040DF3904C08B1F182A64 /* Repairer */,
-				45304268E21D926772593543 /* Option */,
 				453042D8E7F7B1D0BE493244 /* Extension */,
+				453043BC8728095373E38B91 /* Property */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -240,14 +244,6 @@
 			path = Logger;
 			sourceTree = "<group>";
 		};
-		45304268E21D926772593543 /* Option */ = {
-			isa = PBXGroup;
-			children = (
-				453043FEAC3E8268E025FE75 /* Option.swift */,
-			);
-			path = Option;
-			sourceTree = "<group>";
-		};
 		453042D8E7F7B1D0BE493244 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,12 +269,28 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		453043BC8728095373E38B91 /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				45304EBE0508567C494EF6AF /* Property.swift */,
+			);
+			path = Property;
+			sourceTree = "<group>";
+		};
 		453044DFD014E6839E910DD0 /* Apex */ = {
 			isa = PBXGroup;
 			children = (
 				4530450EF3D7531ACE675A8E /* ApexEnvironment.swift */,
 			);
 			path = Apex;
+			sourceTree = "<group>";
+		};
+		45304D89C49962061BB9719A /* Option */ = {
+			isa = PBXGroup;
+			children = (
+				45304558EBA083D5B78A7ACC /* Option.swift */,
+			);
+			path = Option;
 			sourceTree = "<group>";
 		};
 		45304FA977D7FA60FE7AE63B /* Error */ = {
@@ -450,8 +462,9 @@
 				45304BAFDFFFBBC1CF4BC760 /* Logger.swift in Sources */,
 				4530453C9FE9B1E44CCC4DA6 /* Error.swift in Sources */,
 				453042C7B02DA7A567532CF9 /* Repairer.swift in Sources */,
-				45304F47A681D46A20AC6250 /* Option.swift in Sources */,
 				4530419FE1EBA38CC036FD36 /* Bool.Int.swift in Sources */,
+				4530493DB1EC49DFFF21E951 /* Option.swift in Sources */,
+				453049FC79DC32E00FEC36C1 /* Property.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,8 +479,9 @@
 				45304F65CFA2D7D7F3A70013 /* Logger.swift in Sources */,
 				45304FDAC7E650229DBE0DC3 /* Error.swift in Sources */,
 				453048EDC508D67F25D02ECB /* Repairer.swift in Sources */,
-				4530435C9F4044BF3D03E208 /* Option.swift in Sources */,
 				453043712F4F8385D6438C75 /* Bool.Int.swift in Sources */,
+				453046C8BC7FB2C3F9D9BAE1 /* Option.swift in Sources */,
+				45304002977A9E0B7100D651 /* Property.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

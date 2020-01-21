@@ -9,7 +9,7 @@ public class Database {
 
     let path: String
 
-    private let db: OpaquePointer
+    private let pointer: OpaquePointer
     private let writeOption: OpaquePointer
     private let readOption: OpaquePointer
     private var lastErrorPtr: UnsafeMutablePointer<Int8>? = nil
@@ -33,7 +33,7 @@ public class Database {
             throw Error.readOption
         }
 
-        self.db = db
+        self.pointer = db
         self.writeOption = writeOption
         self.readOption = readOption
 
@@ -41,7 +41,7 @@ public class Database {
     }
 
     deinit {
-        leveldb_close(self.db)
+        leveldb_close(self.pointer)
         leveldb_writeoptions_destroy(self.writeOption)
         leveldb_readoptions_destroy(self.readOption)
         leveldb_free(lastErrorPtr)
@@ -57,7 +57,7 @@ public extension Database {
                 throw Error.put(message: nil)
             }
 
-            leveldb_put(db, writeOption, key, key.count, unsafePointer, value.count, &lastErrorPtr)
+            leveldb_put(pointer, writeOption, key, key.count, unsafePointer, value.count, &lastErrorPtr)
 
             if let error = lastErrorPtr {
                 let message = String(cString: error)
@@ -68,7 +68,7 @@ public extension Database {
 
     func get(key: String) throws -> Data? {
         var valueLength: Int = 0
-        guard let dataPtr = leveldb_get(db, readOption, key, key.count, &valueLength, &lastErrorPtr) else {
+        guard let dataPtr = leveldb_get(pointer, readOption, key, key.count, &valueLength, &lastErrorPtr) else {
             if let error = lastErrorPtr {
                 let message = String(cString: error)
                 throw Error.get(message: message)
@@ -80,7 +80,7 @@ public extension Database {
     }
 
     func delete(key: String) throws {
-        leveldb_delete(db, writeOption, key, key.count, &lastErrorPtr)
+        leveldb_delete(pointer, writeOption, key, key.count, &lastErrorPtr)
         if let error = lastErrorPtr {
             let message = String(cString: error)
             throw Error.delete(message: message)
@@ -88,8 +88,17 @@ public extension Database {
     }
 }
 
-extension Database {
+public extension Database {
+    func getProperty(_ property: Property) -> String? {
+        guard let value = leveldb_property_value(pointer, property.name) else {
+            return nil
+        }
+        return String(cString: value)
+    }
+}
+
+public extension Database {
     func compact(beginKey: String? = nil, endKey: String? = nil) {
-        leveldb_compact_range(db, beginKey, beginKey?.count ?? 0, endKey, endKey?.count ?? 0)
+        leveldb_compact_range(pointer, beginKey, beginKey?.count ?? 0, endKey, endKey?.count ?? 0)
     }
 }

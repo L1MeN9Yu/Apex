@@ -20,6 +20,18 @@ private extension ContentView {
         guard let path = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("db.apex").path else { return }
         do {
             let db = try Database(path: path, option: Option())
+            do {
+                print("stats = \(db.getProperty(Property.stats) ?? "")")
+                print("sstables = \(db.getProperty(Property.sstables) ?? "")")
+                print("approximateMemoryUsage = \(db.getProperty(Property.approximateMemoryUsage) ?? "")")
+                print("numFilesAtLevel 0 = \(db.getProperty(Property.numFilesAtLevel(0)) ?? "")")
+                print("numFilesAtLevel 1 = \(db.getProperty(Property.numFilesAtLevel(1)) ?? "")")
+                print("numFilesAtLevel 2 = \(db.getProperty(Property.numFilesAtLevel(2)) ?? "")")
+                print("numFilesAtLevel 3 = \(db.getProperty(Property.numFilesAtLevel(3)) ?? "")")
+                print("numFilesAtLevel 4 = \(db.getProperty(Property.numFilesAtLevel(4)) ?? "")")
+                print("numFilesAtLevel 5 = \(db.getProperty(Property.numFilesAtLevel(5)) ?? "")")
+                print("numFilesAtLevel 6 = \(db.getProperty(Property.numFilesAtLevel(6)) ?? "")")
+            }
             if let data1 = try db.get(key: "111") {
                 if let string = String(data: data1, encoding: .utf8) {
                     print(string)
