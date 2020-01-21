@@ -7,10 +7,36 @@
 //
 
 import SwiftUI
+import Apex
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("Hello, World!").onAppear(perform: test)
+    }
+}
+
+private extension ContentView {
+    func test() {
+        guard let path = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("db.apex").path else { return }
+        do {
+            let db = try Database(path: path)
+            if let data1 = try db.get(key: "111") {
+                if let string = String(data: data1, encoding: .utf8) {
+                    print(string)
+                }
+            }
+            if let data2 = "value".data(using: .utf8) {
+                try db.put(key: "111", value: data2)
+            }
+
+            if let data3 = try db.get(key: "111") {
+                if let string = String(data: data3, encoding: .utf8) {
+                    print(string)
+                }
+            }
+        } catch let error {
+            print("===\(error)===")
+        }
     }
 }
 

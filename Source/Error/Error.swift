@@ -6,5 +6,11 @@
 import Foundation
 
 public enum Error: Swift.Error {
-    case `internal`(message: String?)
+    case open(message: String?)
+    case writeOption
+    case readOption
+    case put(message: String?)
+    case get(message: String?)
+    case delete(message: String?)
+    case repair(message: String?)
 }
