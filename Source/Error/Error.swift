@@ -11,7 +11,8 @@ public enum Error: Swift.Error {
     case readOption
     case put(message: String?)
     case get(message: String?)
-    case writeBatch(message: String?)
     case delete(message: String?)
+    case writeBatch(message: String?)
+    case iterator(message: String?)
     case repair(message: String?)
 }

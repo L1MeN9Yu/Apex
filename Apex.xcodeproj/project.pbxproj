@@ -35,6 +35,7 @@
 		453042C7B02DA7A567532CF9 /* Repairer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453049D4CC582E0C8B0F9037 /* Repairer.swift */; };
 		453043712F4F8385D6438C75 /* Bool.Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530478C5174698367941AB2 /* Bool.Int.swift */; };
 		4530437D4D780702CB989085 /* LogFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530453D9498E4EF54ED1F66 /* LogFlag.swift */; };
+		4530447B05952CD3D8BC3C2B /* ApexDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45304FFD901251B426F4F2E6 /* ApexDemo.swift */; };
 		453044CD27F97DFE2D5C3EE7 /* ApexEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530450EF3D7531ACE675A8E /* ApexEnvironment.swift */; };
 		4530453C9FE9B1E44CCC4DA6 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453048ADC7962381057CC1FE /* Error.swift */; };
 		453045857208FE82BE7B4067 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453045B39C64A68830DA8E9D /* Environment.swift */; };
@@ -107,6 +108,7 @@
 		453049D4CC582E0C8B0F9037 /* Repairer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repairer.swift; sourceTree = "<group>"; };
 		453049EACB268B2A55256440 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		45304EBE0508567C494EF6AF /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		45304FFD901251B426F4F2E6 /* ApexDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApexDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				4530450EF3D7531ACE675A8E /* ApexEnvironment.swift */,
+				45304FFD901251B426F4F2E6 /* ApexDemo.swift */,
 			);
 			path = Apex;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				426DF51623D59BF000F19F00 /* SceneDelegate.swift in Sources */,
 				426DF51823D59BF000F19F00 /* ContentView.swift in Sources */,
 				453044CD27F97DFE2D5C3EE7 /* ApexEnvironment.swift in Sources */,
+				4530447B05952CD3D8BC3C2B /* ApexDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
