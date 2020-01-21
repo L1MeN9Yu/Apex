@@ -86,6 +86,14 @@ public extension Database {
             throw Error.delete(message: message)
         }
     }
+
+    func writeBatch(_ batch: WriteBatch) throws {
+        leveldb_write(pointer, writeOption, batch.pointer, &lastErrorPtr)
+        if let error = lastErrorPtr {
+            let message = String(cString: error)
+            throw Error.writeBatch(message: message)
+        }
+    }
 }
 
 public extension Database {
