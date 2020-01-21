@@ -14,13 +14,10 @@ public class Database {
     private let readOption: OpaquePointer
     private var lastErrorPtr: UnsafeMutablePointer<Int8>? = nil
 
-    public init(path: String) throws {
+    public init(path: String, option: Option) throws {
         self.path = path
-        let option = leveldb_options_create()
 
-        leveldb_options_set_create_if_missing(option, 1)
-
-        guard let db = leveldb_open(option, path, &lastErrorPtr) else {
+        guard let db = leveldb_open(option.pointer, path, &lastErrorPtr) else {
             var message: String? = nil
             if let error = lastErrorPtr {
                 message = String(cString: error)
@@ -39,8 +36,6 @@ public class Database {
         self.db = db
         self.writeOption = writeOption
         self.readOption = readOption
-
-        leveldb_options_destroy(option)
 
         Logger.trace(message: "db open success. path is \(path)")
     }

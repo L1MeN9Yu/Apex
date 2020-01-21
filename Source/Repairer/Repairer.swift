@@ -9,13 +9,10 @@ public struct Repairer { private init() {} }
 
 extension Repairer {
     static func repair(path: String, option: Option) throws {
-        let op = leveldb_options_create()
 
         var lastErrorPtr: UnsafeMutablePointer<Int8>? = nil
-        leveldb_repair_db(op, path, &lastErrorPtr)
-
-        leveldb_options_destroy(op)
-
+        leveldb_repair_db(option.pointer, path, &lastErrorPtr)
+        
         if let error = lastErrorPtr {
             let message = String(cString: error)
             leveldb_free(error)

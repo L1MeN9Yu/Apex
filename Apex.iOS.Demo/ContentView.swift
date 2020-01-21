@@ -19,13 +19,13 @@ private extension ContentView {
     func test() {
         guard let path = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("db.apex").path else { return }
         do {
-            let db = try Database(path: path)
+            let db = try Database(path: path, option: Option())
             if let data1 = try db.get(key: "111") {
                 if let string = String(data: data1, encoding: .utf8) {
                     print(string)
                 }
             }
-            if let data2 = "value".data(using: .utf8) {
+            if let data2 = "value222".data(using: .utf8) {
                 try db.put(key: "111", value: data2)
             }
 
