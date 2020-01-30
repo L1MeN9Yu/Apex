@@ -27,7 +27,7 @@ extension ApexDemo {
 
             print("============")
             try db.iterator { key, value, stop in
-                print("key = \(key) \(String(data: value, encoding: .utf8) ?? "data to string error")")
+                print("key = \(key) value = \(String(data: value, encoding: .utf8) ?? "data to string error")")
             }
 
             print("============")

@@ -49,3 +49,7 @@ public class Option {
         leveldb_options_destroy(pointer)
     }
 }
+
+public extension Option {
+    static let `default` = Option()
+}

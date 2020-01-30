@@ -10,11 +10,14 @@ public class Database {
     let path: String
 
     private let pointer: OpaquePointer
-    private let writeOption: OpaquePointer
-    private let readOption: OpaquePointer
+    private let writeOption: WriteOption
+    private let readOption: ReadOption
     private var lastErrorPtr: UnsafeMutablePointer<Int8>? = nil
 
-    public init(path: String, option: Option) throws {
+    public init(path: String,
+                option: Option = Option.default,
+                writeOption: WriteOption = WriteOption.default,
+                readOption: ReadOption = ReadOption.default) throws {
         self.path = path
 
         guard let db = leveldb_open(option.pointer, path, &lastErrorPtr) else {
@@ -23,14 +26,6 @@ public class Database {
                 message = String(cString: error)
             }
             throw Error.open(message: message)
-        }
-
-        guard let writeOption = leveldb_writeoptions_create() else {
-            throw Error.writeOption
-        }
-
-        guard let readOption = leveldb_readoptions_create() else {
-            throw Error.readOption
         }
 
         self.pointer = db
@@ -42,8 +37,6 @@ public class Database {
 
     deinit {
         leveldb_close(self.pointer)
-        leveldb_writeoptions_destroy(self.writeOption)
-        leveldb_readoptions_destroy(self.readOption)
         leveldb_free(lastErrorPtr)
         Logger.trace(message: "db close success. path is \(path)")
     }
@@ -57,7 +50,7 @@ public extension Database {
                 throw Error.put(message: nil)
             }
 
-            leveldb_put(pointer, writeOption, key, key.count, unsafePointer, value.count, &lastErrorPtr)
+            leveldb_put(pointer, writeOption.pointer, key, key.count, unsafePointer, value.count, &lastErrorPtr)
 
             if let error = lastErrorPtr {
                 let message = String(cString: error)
@@ -68,7 +61,7 @@ public extension Database {
 
     func get(key: String) throws -> Data? {
         var valueLength: Int = 0
-        guard let dataPtr = leveldb_get(pointer, readOption, key, key.count, &valueLength, &lastErrorPtr) else {
+        guard let dataPtr = leveldb_get(pointer, readOption.pointer, key, key.count, &valueLength, &lastErrorPtr) else {
             if let error = lastErrorPtr {
                 let message = String(cString: error)
                 throw Error.get(message: message)
@@ -80,7 +73,7 @@ public extension Database {
     }
 
     func delete(key: String) throws {
-        leveldb_delete(pointer, writeOption, key, key.count, &lastErrorPtr)
+        leveldb_delete(pointer, writeOption.pointer, key, key.count, &lastErrorPtr)
         if let error = lastErrorPtr {
             let message = String(cString: error)
             throw Error.delete(message: message)
@@ -88,7 +81,7 @@ public extension Database {
     }
 
     func writeBatch(_ batch: WriteBatch) throws {
-        leveldb_write(pointer, writeOption, batch.pointer, &lastErrorPtr)
+        leveldb_write(pointer, writeOption.pointer, batch.pointer, &lastErrorPtr)
         if let error = lastErrorPtr {
             let message = String(cString: error)
             throw Error.writeBatch(message: message)
@@ -96,7 +89,7 @@ public extension Database {
     }
 
     func iterator(reverse: Bool = false, startKey: String? = nil, action: (_ key: String, _ value: Data, _ stop: inout Bool) -> Void) throws {
-        let iterator = leveldb_create_iterator(pointer, readOption)
+        let iterator = leveldb_create_iterator(pointer, readOption.pointer)
         defer { leveldb_iter_destroy(iterator) }
 
         let `init` = {
