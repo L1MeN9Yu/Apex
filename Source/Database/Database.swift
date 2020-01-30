@@ -9,7 +9,7 @@ public class Database {
 
     let path: String
 
-    private let pointer: OpaquePointer
+    let pointer: OpaquePointer
     private let writeOption: WriteOption
     private let readOption: ReadOption
     private var lastErrorPtr: UnsafeMutablePointer<Int8>? = nil

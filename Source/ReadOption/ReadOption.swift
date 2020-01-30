@@ -20,6 +20,12 @@ public class ReadOption {
         }
     }
 
+    public var snapshot: Snapshot? {
+        didSet {
+            leveldb_readoptions_set_snapshot(pointer, snapshot?.pointer)
+        }
+    }
+
     public init(verifyChecksum: Bool = false, fillCache: Bool = false) {
         pointer = leveldb_readoptions_create()
 
