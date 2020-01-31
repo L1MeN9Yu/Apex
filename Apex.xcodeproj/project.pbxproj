@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		426DF4ED23D593FC00F19F00 /* Apex.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF4EB23D593FC00F19F00 /* Apex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		426DF50323D5972100F19F00 /* Apex.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF4EB23D593FC00F19F00 /* Apex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		426DF50923D5982300F19F00 /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF50723D5982300F19F00 /* export.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		426DF50A23D5982300F19F00 /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF50723D5982300F19F00 /* export.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		426DF50B23D5982300F19F00 /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF50823D5982300F19F00 /* c.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		426DF50C23D5982300F19F00 /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = 426DF50823D5982300F19F00 /* c.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		426DF51423D59BF000F19F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DF51323D59BF000F19F00 /* AppDelegate.swift */; };
 		426DF51623D59BF000F19F00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DF51523D59BF000F19F00 /* SceneDelegate.swift */; };
 		426DF51823D59BF000F19F00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426DF51723D59BF000F19F00 /* ContentView.swift */; };
@@ -47,6 +41,7 @@
 		453047C26A1C8135D45A5FF9 /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530445CD953B2C3C26956EF /* Snapshot.swift */; };
 		453047D2F7BF163E161FE8A2 /* ReadOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453049C4B12157CC6D4D7BE7 /* ReadOption.swift */; };
 		453048240FFC6C8A70DF3089 /* Apex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530469F114908A8DDA339C6 /* Apex.swift */; };
+		453048663230A86268649666 /* Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45304581C2644E39D6C34738 /* Export.swift */; };
 		453048EDC508D67F25D02ECB /* Repairer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453049D4CC582E0C8B0F9037 /* Repairer.swift */; };
 		4530493DB1EC49DFFF21E951 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45304558EBA083D5B78A7ACC /* Option.swift */; };
 		4530498DC2C60CF29F905540 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453049EACB268B2A55256440 /* Database.swift */; };
@@ -54,6 +49,7 @@
 		45304BAFDFFFBBC1CF4BC760 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453045EDA8E9C74823A61458 /* Logger.swift */; };
 		45304E19B3F21638CE8D4BAB /* WriteBatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453046E0D5B18921E923B7C1 /* WriteBatch.swift */; };
 		45304F65CFA2D7D7F3A70013 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453045EDA8E9C74823A61458 /* Logger.swift */; };
+		45304F7E3DE19A47FC736384 /* Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45304581C2644E39D6C34738 /* Export.swift */; };
 		45304FDAC7E650229DBE0DC3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453048ADC7962381057CC1FE /* Error.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,11 +82,8 @@
 		421A818923D692B7009A5290 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		421A818A23D692CA009A5290 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		426DF4E823D593FC00F19F00 /* Apex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Apex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		426DF4EB23D593FC00F19F00 /* Apex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apex.h; sourceTree = "<group>"; };
 		426DF4EC23D593FC00F19F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		426DF4F823D5942300F19F00 /* Apex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Apex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		426DF50723D5982300F19F00 /* export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = export.h; sourceTree = "<group>"; };
-		426DF50823D5982300F19F00 /* c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
 		426DF51123D59BF000F19F00 /* Apex.iOS.Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apex.iOS.Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		426DF51323D59BF000F19F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		426DF51523D59BF000F19F00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +99,7 @@
 		4530450EF3D7531ACE675A8E /* ApexEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApexEnvironment.swift; sourceTree = "<group>"; };
 		4530453D9498E4EF54ED1F66 /* LogFlag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFlag.swift; sourceTree = "<group>"; };
 		45304558EBA083D5B78A7ACC /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		45304581C2644E39D6C34738 /* Export.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Export.swift; sourceTree = "<group>"; };
 		453045B39C64A68830DA8E9D /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		453045EDA8E9C74823A61458 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		453046686554B57D49883DF9 /* WriteOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteOption.swift; sourceTree = "<group>"; };
@@ -156,7 +150,6 @@
 				421A818A23D692CA009A5290 /* README.md */,
 				421A818823D692B7009A5290 /* .gitattributes */,
 				421A818923D692B7009A5290 /* .gitignore */,
-				426DF50623D5981400F19F00 /* C */,
 				426DF50023D5957200F19F00 /* Source */,
 				426DF4EA23D593FC00F19F00 /* Apex */,
 				426DF51223D59BF000F19F00 /* Apex.iOS.Demo */,
@@ -178,7 +171,6 @@
 		426DF4EA23D593FC00F19F00 /* Apex */ = {
 			isa = PBXGroup;
 			children = (
-				426DF4EB23D593FC00F19F00 /* Apex.h */,
 				426DF4EC23D593FC00F19F00 /* Info.plist */,
 			);
 			path = Apex;
@@ -200,17 +192,9 @@
 				4530411E2B89632D50F65A19 /* ReadOption */,
 				45304BE8CEFD903FDF3CDF8A /* WriteOption */,
 				453049A033F05C0B6FB7B7ED /* Snapshot */,
+				45304916F863CE44A3A945A4 /* Export */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		426DF50623D5981400F19F00 /* C */ = {
-			isa = PBXGroup;
-			children = (
-				426DF50823D5982300F19F00 /* c.h */,
-				426DF50723D5982300F19F00 /* export.h */,
-			);
-			path = C;
 			sourceTree = "<group>";
 		};
 		426DF51223D59BF000F19F00 /* Apex.iOS.Demo */ = {
@@ -320,6 +304,14 @@
 			path = WriteBatch;
 			sourceTree = "<group>";
 		};
+		45304916F863CE44A3A945A4 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				45304581C2644E39D6C34738 /* Export.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
 		453049A033F05C0B6FB7B7ED /* Snapshot */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,9 +351,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				426DF50B23D5982300F19F00 /* c.h in Headers */,
-				426DF50923D5982300F19F00 /* export.h in Headers */,
-				426DF4ED23D593FC00F19F00 /* Apex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,9 +358,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				426DF50C23D5982300F19F00 /* c.h in Headers */,
-				426DF50A23D5982300F19F00 /* export.h in Headers */,
-				426DF50323D5972100F19F00 /* Apex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +506,7 @@
 				453047D2F7BF163E161FE8A2 /* ReadOption.swift in Sources */,
 				4530468BB3A39794D009C2F5 /* WriteOption.swift in Sources */,
 				453047C26A1C8135D45A5FF9 /* Snapshot.swift in Sources */,
+				453048663230A86268649666 /* Export.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +528,7 @@
 				4530429C4D4B322F1D3F61CF /* ReadOption.swift in Sources */,
 				453045464CEC9E6AF9A32B76 /* WriteOption.swift in Sources */,
 				453040EFF40696598540D525 /* Snapshot.swift in Sources */,
+				45304F7E3DE19A47FC736384 /* Export.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +689,7 @@
 		426DF4F123D593FC00F19F00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -729,6 +718,7 @@
 		426DF4F223D593FC00F19F00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

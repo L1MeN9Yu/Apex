@@ -37,7 +37,9 @@ public class Database {
 
     deinit {
         leveldb_close(self.pointer)
-        leveldb_free(lastErrorPtr)
+        if let e = lastErrorPtr {
+            leveldb_free(e)
+        }
         Logger.trace(message: "db close success. path is \(path)")
     }
 }
@@ -67,6 +69,9 @@ public extension Database {
                 throw Error.get(message: message)
             }
             return nil
+        }
+        defer {
+            dataPtr.deallocate()
         }
         let data = Data(bytes: dataPtr, count: valueLength)
         return data
@@ -143,6 +148,9 @@ public extension Database {
     func getProperty(_ property: Property) -> String? {
         guard let value = leveldb_property_value(pointer, property.name) else {
             return nil
+        }
+        defer {
+            value.deallocate()
         }
         return String(cString: value)
     }
